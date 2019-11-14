@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1411px;
+  margin: 33px auto 0;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-title {
+  width: 134px;
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 18px;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+  color: $white;
+}
+
+.logo-title-min {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
+
+.site-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__link {
+  text-decoration: none;
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  display: flex;
+  align-items: center;
+}
+
+.site-list__link-email {
+  margin-right: 88px;
+}
+
+.site-list__button {
+  width: 180px;
+  margin-left: 50px;
+  border: 1px solid #ffffff;
+  color: $white;
+}
+
+.site-list-email__icon {
+  margin-right: 20px;
+}
+
+.site-list-phone__icon {
+  margin-right: 17px;
+}
