@@ -1,0 +1,148 @@
+.form {
+  background-color: $blue;
+}
+
+.form-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 91px;
+  padding-bottom: 113px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    top: 161px;
+    left: -24px;
+    width: 511px;
+    height: 288px;
+    position: absolute;
+    background-image: url("../img/form-airplane.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 511px 288px;
+  }
+}
+
+.form-area {
+  width: 570px;
+}
+
+.form__title {
+  margin: 0;
+  margin-left: -3px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.form__text {
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 51px;
+  padding: 0;
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.filter__type {
+  margin-bottom: 37px;
+  padding: 0;
+  border: none;
+}
+
+.filter__name {
+  padding: 0;
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  border: none;
+  background-color: #19baff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.filter__name::placeholder {
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.filter__textarea {
+  padding: 11px 17px;
+  width: 100%;
+  margin-top: 40px;
+  resize: none;
+}
+
+.filter__input {
+  padding: 14px 16px;
+  width: 270px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-button {
+  width: 270px;
+  border: 1px solid #ffffff;
+  color: $white;
+}
+
+.filter__checkbox {
+  width: 230px;
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+  position: relative;
+}
+
+.filter__input-checkbox {
+    &:checked + .filter__checkbox::after {
+    content: "";
+    position: absolute;
+    width: 7.5px;
+    height: 4.5px;
+    left: -26px;
+    top: 9px;
+    background-image: url("../img/checkbox.svg");
+    background-size: 9px 6px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  & + .filter__checkbox::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $white;
+  }
+}

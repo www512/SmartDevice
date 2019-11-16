@@ -1,6 +1,7 @@
 .about {
   width: 1170px;
   margin: 112px auto 0;
+  padding-bottom: 111px;
 }
 
 .about__list {
@@ -20,10 +21,18 @@
   box-sizing: border-box;
   margin-bottom: 30px;
   padding: 94px 43px 50px 42px;
+  position: relative;
 }
 
 .about__item:nth-last-of-type(-n+2) {
   margin-bottom: 0;
+}
+
+.about__item-icon {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  fill: $blue;
 }
 
 .about__item-title {
@@ -55,10 +64,86 @@
   background-color: $blue;
 }
 
+.about__item:hover > .about__item-icon {
+  fill: $white;
+}
+
 .about__item:hover > .about__item-title {
   color: $white;
 }
 
 .about__item:hover > .about__item-text {
   color: $white;
+}
+
+.about__title {
+  position: relative;
+  margin: 105px 0 21px 182px;
+  padding: 0;
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.about__title::before {
+  content: "2005";
+  position: absolute;
+  top: 54px;
+  left: -278px;
+  background-image: url("../img/about-background.png");
+  background-size: 305px 115px;
+  background-repeat: no-repeat;
+  background-color: #00b35d;
+  background-position: 5px 51px;
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 156.248px;
+  line-height: 220px;
+  color: transparent;
+  transform: rotate(-90deg);
+  background-clip: text;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 21px;
+  margin-left: 182px;
+  padding: 0;
+  font-family: $font-ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.about__detail {
+  margin-top: 17px;
+  margin-left: 182px;
+  width: 180px;
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.about__year {
+  position: absolute;
+
+  font-family: $font-roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 156.248px;
+  line-height: 220px;
+  color: #00b35d;
+  transform: rotate(-90deg);
 }

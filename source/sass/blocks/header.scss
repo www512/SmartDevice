@@ -12,7 +12,7 @@
 }
 
 .logo-title {
-  width: 134px;
+  width: 148px;
   font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: bold;
@@ -21,6 +21,10 @@
   margin: 0;
   margin-left: 16px;
   padding: 0;
+  color: #203c42;
+}
+
+.logo-title-color {
   color: $white;
 }
 
@@ -64,10 +68,10 @@
   color: $white;
 }
 
-.site-list-email__icon {
+.site-list__email-icon {
   margin-right: 20px;
 }
 
-.site-list-phone__icon {
+.site-list__phone-icon {
   margin-right: 17px;
 }

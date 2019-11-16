@@ -2,10 +2,13 @@
   margin-top: -85px;
   padding-top: 316px;
   padding-bottom: 275px;
-  background-image: url("../img/main-background.png");
-  background-size: 1920px 878px;
+  background: url("../img/main-background.png") no-repeat transparent center top;
+  /*background: url("../img/main-rectangles.png") no-repeat transparent center top;*/
+  /*background-image: url("../img/main-background.png");*/
+/*  background-size: 1920px 878px;
+  background-position: -7px top;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   background-color: #1b2d37;
 }
 
@@ -19,7 +22,7 @@
     content: "";
     position: absolute;
     top: -58px;
-    right: -79px;
+    left: 785px;
     width: 705px;
     height: 515px;
     background-image: url("../img/main-smart.png");
@@ -27,6 +30,17 @@
     background-repeat: no-repeat;
     background-color: transparent;
   }
+
+/*  &::before {
+    content: "";
+    position: absolute;
+    top: -58px;
+    left: 200px;
+    width: 612px;
+    height: 487px;
+    background: url('../img/main-rectangles.svg') red no-repeat center center;
+    background-size: 612px 487px;
+  }*/
 }
 
 .main__title {
