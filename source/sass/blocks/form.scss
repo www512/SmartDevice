@@ -1,4 +1,12 @@
 .form {
+  background-image: url("../img/form-rectangle1.svg"),
+                    url("../img/form-rectangle2.svg"),
+                    url("../img/main-rectangles.png");
+  background-position: top 42px left calc(50% + 816px),
+                       top 287px left calc(50% + 790px),
+                       top -178px left calc(50% - 854px);
+  background-size: auto;
+  background-repeat: no-repeat;
   background-color: $blue;
 }
 
@@ -61,6 +69,12 @@
   border: none;
 }
 
+.filter__type-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .filter__name {
   padding: 0;
   font-family: $font-ptmono;
@@ -104,8 +118,19 @@
 
 .form-button {
   width: 270px;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
   color: $white;
+
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:active {
+    border: 1px solid $white;
+    color: $white;
+  }
 }
 
 .filter__checkbox {
@@ -118,6 +143,12 @@
   color: $white;
   opacity: 0.8;
   position: relative;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .filter__input-checkbox {

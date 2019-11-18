@@ -1,14 +1,11 @@
 .main-wrapper {
-  margin-top: -85px;
   padding-top: 316px;
   padding-bottom: 275px;
-  background: url("../img/main-background.png") no-repeat transparent center top;
-  /*background: url("../img/main-rectangles.png") no-repeat transparent center top;*/
-  /*background-image: url("../img/main-background.png");*/
-/*  background-size: 1920px 878px;
-  background-position: -7px top;
+  background-image: url("../img/main-background.png"),
+                    url("../img/main-rectangles.png");
+  background-size: 100% 878px, auto;
   background-position: center top;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color: #1b2d37;
 }
 
@@ -30,17 +27,6 @@
     background-repeat: no-repeat;
     background-color: transparent;
   }
-
-/*  &::before {
-    content: "";
-    position: absolute;
-    top: -58px;
-    left: 200px;
-    width: 612px;
-    height: 487px;
-    background: url('../img/main-rectangles.svg') red no-repeat center center;
-    background-size: 612px 487px;
-  }*/
 }
 
 .main__title {
@@ -88,13 +74,24 @@
   margin-left: 94px;
   padding: 17px 17px;
   color: $white;
-  background-color: #00b2ff;
+  background-color: $blue;
   width: 407px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.main__button-help:hover,
+.main__button-help:focus {
+  color: $blue;
+  background-color: $white;
+}
+
+.main__button-help:active {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(1, 178, 255, 0.7);
 }
 
 .main__scroll {
@@ -110,4 +107,14 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   text-decoration: none;
+  cursor: pointer;
+}
+
+.main__scroll:hover,
+.main__scroll:focus {
+  opacity: 0.7;
+}
+
+.main__scroll:active {
+  opacity: 0.9;
 }

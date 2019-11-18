@@ -3,7 +3,12 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1411px;
-  margin: 33px auto 0;
+  margin: 0 auto;
+  padding-top: 33px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .logo {
@@ -55,6 +60,16 @@
   color: $white;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: $blue;
+}
+
+.site-list__link:active {
+  color: rgba(1, 178, 255, 0.7);
 }
 
 .site-list__link-email {
@@ -64,8 +79,19 @@
 .site-list__button {
   width: 180px;
   margin-left: 50px;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
   color: $white;
+}
+
+.site-list__button:hover,
+.site-list__button:focus {
+  border: 1px solid $blue;
+  color: $blue;
+}
+
+.site-list__button:active {
+  border: 1px solid rgba(1, 178, 255, 0.7);
+  color: rgba(1, 178, 255, 0.7);
 }
 
 .site-list__email-icon {
@@ -74,4 +100,17 @@
 
 .site-list__phone-icon {
   margin-right: 17px;
+}
+
+.site-list__icon {
+  fill: $blue;
+}
+
+.site-list__link:hover .site-list__icon,
+.site-list__link:focus .site-list__icon {
+  fill: $white;
+}
+
+.site-list__link:active .site-list__icon {
+  fill: rgba(255, 255, 255, 0.7);
 }
