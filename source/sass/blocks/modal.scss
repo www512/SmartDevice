@@ -1,14 +1,23 @@
 .modal {
   display: none;
-  /*position: fixed;*/
+  position: fixed;
   width: 490px;
   margin: 0 auto;
   padding: 29px 37.28px 35px;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   background-color: $blue;
   box-sizing: border-box;
   z-index: 15;
+}
+
+.modal__show {
+  display: block;
+}
+
+.scroll-off {
+  overflow: hidden;
 }
 
 .modal__title {
@@ -153,6 +162,39 @@
   z-index: 10;
 }
 
+.modal__close {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
 .page-overlay__show {
   display: block;
 }
+
