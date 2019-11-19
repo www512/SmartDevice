@@ -177,3 +177,66 @@
     border-color: $white;
   }
 }
+
+@media (max-width: $laptop-width) {
+  .form {
+    background-image: none;
+  }
+
+  .form-wrapper {
+    width: 590px;
+    padding-top: 80px;
+    padding-bottom: 105px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .form-area {
+    width: 100%;
+  }
+
+  .form__title {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 17px;
+  }
+
+  .form__text {
+    margin-bottom: 55px;
+  }
+
+  .filter__type {
+    margin-bottom: 39px;
+  }
+
+  .filter__input {
+    width: 280px;
+  }
+
+  .filter__textarea {
+    margin-top: 42px;
+    height: 160px;
+  }
+
+  .form-button {
+    width: 280px;
+  }
+
+  .filter__checkbox {
+    width: 235px;
+  }
+
+  .filter__input-checkbox {
+    &:checked + .filter__checkbox::after {
+    left: -30px;
+    top: 9px;
+  }
+
+  & + .filter__checkbox::before {
+    left: -34px;
+    top: 3px;
+  }
+}
+}

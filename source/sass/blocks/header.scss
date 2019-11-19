@@ -114,3 +114,62 @@
 .site-list__link:active .site-list__icon {
   fill: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: $laptop-width) {
+  .header {
+    max-width: 720px;
+    padding-top: 18px;
+  }
+
+  .site-list__text {
+    display: none;
+  }
+
+  .site-list__link-email {
+    margin-right: 34px;
+  }
+
+  .site-list__email-icon {
+    margin-right: 0;
+    width: 25px;
+    height: 19px;
+  }
+
+  .site-list__phone-icon {
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .site-list__button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    max-width: 287px;
+    padding-top: 17px;
+  }
+
+  .logo-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-title-color {
+    display: none;
+  }
+
+  .site-list {
+    padding-bottom: 3px;
+  }
+
+  .site-list__text {
+    display: none;
+  }
+
+  .site-list__link-email {
+    margin-right: 23px;
+  }
+}

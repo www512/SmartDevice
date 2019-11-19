@@ -118,3 +118,110 @@
 .main__scroll:active {
   opacity: 0.9;
 }
+
+@media (max-width: $laptop-width) {
+  .main-wrapper {
+    padding-top: 188px;
+    padding-bottom: 163px;
+    background-image: url("../img/main-background-lap.png"),
+                      url("../img/main-rectangles-lap.png");
+    background-size: 100% 686px, auto;
+  }
+
+  .main__scroll {
+    display: none;
+  }
+
+  .main-wrapper__content {
+    margin: 0;
+    padding-left: 93px;
+    max-width: 720px;
+
+    &::after {
+      top: -75px;
+      left: 510px;
+      width: 465px;
+      height: 340px;
+      background-image: url("../img/main-smart-lap.png");
+      background-size: 465px 340px;
+    }
+  }
+
+  .main__title {
+    margin-bottom: 29px;
+    width: 470px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .main__description {
+    width: 356px;
+    margin-left: 46px;
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 156.8%;
+
+    &::before {
+      top: 16px;
+      left: -48px;
+      width: 33px;
+      height: 2px;
+    }
+  }
+
+  .main__button-help {
+    margin-left: 46px;
+    width: 379px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-wrapper {
+    padding-top: 287px;
+    padding-bottom: 70px;
+    background-image: url("../img/main-background-mobile.png"),
+                      url("../img/main-rectangles-mobile.png");
+    background-size: 100% 647px, auto;
+  }
+
+  .main-wrapper__content {
+    padding-left: 101px;
+    max-width: 287px;
+
+    &::after {
+      top: -195px;
+      left: 107px;
+      width: 301px;
+      height: 220px;
+      background-image: url("../img/main-smart-mobile.png");
+      background-size: 301px 220px;
+    }
+  }
+
+  .main__title {
+    margin-bottom: 26px;
+    width: 277px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main__description {
+    width: 245px;
+    margin-left: 46px;
+    margin-bottom: 43px;
+    font-size: 16px;
+  }
+
+  .main__button-help {
+    margin-left: -2px;
+    width: 287px;
+  }
+
+  .button-name__desktop {
+    display: none;
+  }
+
+  .button-name__mobile {
+    display: inline;
+  }
+}

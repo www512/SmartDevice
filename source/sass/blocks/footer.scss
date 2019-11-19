@@ -177,3 +177,17 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: $laptop-width) {
+  .footer {
+    padding-top: 17px;
+  }
+
+  .footer-contact {
+    width: 720px;
+  }
+
+  .footer-license__copyright {
+    display: none;
+  }
+}
