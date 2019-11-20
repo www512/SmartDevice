@@ -144,6 +144,22 @@
   background-clip: text;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .about__title::before {
+    content: "";
+    top: 5px;
+    left: -212px;
+    width: 220px;
+    height: 317px;
+    background-image: url("../img/about-2005.png");
+    background-size: 220px 317px;
+    background-color: transparent;
+    transform: rotate(0deg);
+    background-position: left top;
+   }
+}
+
+
 .about__text {
   margin: 0;
   margin-bottom: 21px;
