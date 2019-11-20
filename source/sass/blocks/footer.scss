@@ -63,7 +63,6 @@
 
 .footer-title {
   margin: 0;
-  margin-bottom: 26px;
   padding: 0;
   font-family: $font-roboto-condensed;
   font-style: normal;
@@ -80,6 +79,7 @@
 .footer-list {
   margin: 0;
   padding: 0;
+  padding-top: 26px;
   list-style: none;
   font-family: $font-ptmono;
   font-style: normal;
@@ -189,6 +189,14 @@
 }
 
 .footer-year {
+  display: none;
+}
+
+.footer-button-mobile {
+  display: none;
+}
+
+.footer-button-mobile-off {
   display: none;
 }
 
@@ -309,10 +317,6 @@
     }
   }
 
-  .footer-title {
-     margin-bottom: 32px;
-  }
-
   .social {
     display: flex;
     flex-direction: column;
@@ -333,11 +337,98 @@
   }
 
   .section {
+    margin: 0;
+    width: 290px;
+    position: relative;
     padding-top: 29px;
-    padding-bottom: 35px;
+    padding-bottom: 27px;
+  }
+
+  .footer-list {
+    padding-top: 32px;
+  }
+
+  .footer-button-mobile {
+    position: absolute;
+    display: block;
+    top: 29px;
+    right: 3px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 2px;
+      top: 7px;
+      right: 0;
+      position: absolute;
+      background-color: #c4c4c4;
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      right: 7px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  .footer-button-mobile:hover::before,
+  .footer-button-mobile:focus::before {
+    background-color: #1b2d37;
+  }
+
+  .footer-button-mobile:hover::after,
+  .footer-button-mobile:focus::after {
+    background-color: #1b2d37;
+  }
+
+  .footer-button-mobile:active::before,
+  .footer-button-mobile:active::after {
+    background-color: #c4c4c4;
+  }
+
+  .footer-button-mobile-off {
+    position: absolute;
+    display: block;
+    top: 29px;
+    right: 3px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+      top: 7px;
+      right: 0;
+      position: absolute;
+      background-color: #c4c4c4;
+    }
+  }
+
+  .footer-button-mobile-off:hover::before,
+  .footer-button-mobile-off:focus::before {
+    background-color: #1b2d37;
+  }
+
+  .footer-button-mobile-off:active::before {
+    background-color: #c4c4c4;
   }
 
   .contacts {
+    width: 290px;
     padding-top: 29px;
     padding-bottom: 35px;
     position: relative;

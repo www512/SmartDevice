@@ -1,9 +1,11 @@
 .form {
   background-image: url("../img/form-rectangle1.svg"),
                     url("../img/form-rectangle2.svg"),
+                    url("../img/form-airplane.png"),
                     url("../img/main-rectangles.png");
   background-position: top 42px left calc(50% + 816px),
                        top 287px left calc(50% + 790px),
+                       top 161px left calc(50% - 354px),
                        top -178px left calc(50% - 854px);
   background-size: auto;
   background-repeat: no-repeat;
@@ -17,20 +19,6 @@
   padding-bottom: 113px;
   display: flex;
   justify-content: flex-end;
-  position: relative;
-
-  &::before {
-    content: "";
-    top: 161px;
-    left: -24px;
-    width: 511px;
-    height: 288px;
-    position: absolute;
-    background-image: url("../img/form-airplane.png");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 511px 288px;
-  }
 }
 
 .form-area {

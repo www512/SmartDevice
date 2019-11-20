@@ -1,6 +1,6 @@
 'use strict';
 
-//Плавный скролл
+//Scroll
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
       animationTime = 400,
       framesCount = 30;
@@ -24,7 +24,7 @@ anchors.forEach(function(item) {
   });
 });
 
-//Модальное окно
+//Modal
 let call = document.querySelector('.site-list__button');
 let popup = document.querySelector('.modal');
 let close = document.querySelector('.modal__close');
@@ -61,7 +61,7 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
-//Маска в модальном окне на номер телефона
+//Mask in a modal window on a phone number
 let phone = document.getElementById('phone');
 let modalPhone = document.getElementById('modal_phone');
 
@@ -71,7 +71,7 @@ let maskOptions = {
 let maskForm = IMask(phone, maskOptions);
 let maskModal = IMask(modalPhone, maskOptions);
 
-//Футер
+//Footer
 let logo = document.getElementById('logo');
 let year = document.querySelector('.footer-license__year');
 let yearClone = year.cloneNode(true);
@@ -79,4 +79,47 @@ let yearClone = year.cloneNode(true);
 yearClone.classList.add('footer-year');
 year.classList.add('footer-year-off');
 logo.after(yearClone);
-// year.remove();
+
+//Accordion for the mobile version in the footer
+let section = document.getElementById('section-button');
+let contacts = document.getElementById('contacts-button');
+let sectionList = document.querySelector('.footer-list-section');
+let contactsList = document.querySelector('.footer-list-contscts');
+
+sectionList.classList.add('footer-year-off');
+section.classList.remove('footer-button-mobile-off');
+section.classList.add('footer-button-mobile');
+
+function onSection () {
+  if (section.classList.contains('footer-button-mobile-off')) {
+    sectionList.classList.add('footer-year-off');
+    section.classList.remove('footer-button-mobile-off');
+    section.classList.add('footer-button-mobile');
+  } else {
+    sectionList.classList.remove('footer-year-off');
+    section.classList.add('footer-button-mobile-off');
+    section.classList.remove('footer-button-mobile');
+  }
+}
+
+function onContacts () {
+  if (contacts.classList.contains('footer-button-mobile-off')) {
+    contactsList.classList.add('footer-year-off');
+    contacts.classList.remove('footer-button-mobile-off');
+    contacts.classList.add('footer-button-mobile');
+  } else {
+    contactsList.classList.remove('footer-year-off');
+    contacts.classList.add('footer-button-mobile-off');
+    contacts.classList.remove('footer-button-mobile');
+  }
+}
+
+section.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  onSection ();
+})
+
+contacts.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  onContacts ();
+})
