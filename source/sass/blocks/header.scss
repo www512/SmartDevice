@@ -1,9 +1,9 @@
 .header {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1411px;
-  margin: 0 auto;
+  width: 1411px;
   padding-top: 33px;
   position: absolute;
   left: 0;
@@ -117,7 +117,7 @@
 
 @media (max-width: $laptop-width) {
   .header {
-    max-width: 720px;
+    width: 720px;
     padding-top: 18px;
   }
 
@@ -148,7 +148,7 @@
 
 @media (max-width: $mobile-width) {
   .header {
-    max-width: 287px;
+    width: 287px;
     padding-top: 17px;
   }
 

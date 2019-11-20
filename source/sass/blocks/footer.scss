@@ -3,7 +3,7 @@
 }
 
 .footer-contact {
-    max-width: 1411px;
+    width: 1411px;
     margin: 0 auto;
     padding-bottom: 59px;
     display: flex;
@@ -139,7 +139,7 @@
 }
 
 .footer-license {
-  max-width: 1411px;
+  width: 1411px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -282,7 +282,7 @@
   }
 
   .footer-license {
-    max-width: 720px;
+    width: 720px;
   }
 
   .footer-year {
@@ -362,7 +362,7 @@
     padding-top: 20px;
     padding-bottom: 14px;
     flex-direction: column;
-    max-width: 290px;
+    width: 290px;
   }
 
   .license-list {
