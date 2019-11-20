@@ -107,6 +107,10 @@
   opacity: 0.9;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: $laptop-width) {
   .main-wrapper {
     padding-top: 188px;
@@ -190,11 +194,11 @@
     width: 287px;
   }
 
-  .button-name__desktop {
+  .desktop {
     display: none;
   }
 
-  .button-name__mobile {
+  .mobile {
     display: inline;
   }
 }

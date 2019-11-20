@@ -301,6 +301,16 @@
 
   .footer-contact {
     width: 290px;
+    padding-bottom: 0;
+
+    &::before {
+      left: calc((100vw - 273px) / -2);
+      bottom: 8px;
+    }
+  }
+
+  .footer-title {
+     margin-bottom: 32px;
   }
 
   .social {
@@ -310,7 +320,7 @@
     padding-bottom: 48px;
 
      &::before {
-      left: calc((100vw - 250px) / -2);
+      left: calc((100vw - 273px) / -2);
     }
   }
 
@@ -322,7 +332,40 @@
     margin: 0;
   }
 
-  .footer-section {
+  .section {
     padding-top: 29px;
+    padding-bottom: 35px;
+  }
+
+  .contacts {
+    padding-top: 29px;
+    padding-bottom: 35px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc((100vw - 273px) / -2);
+      top: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #626962;
+      opacity: 0.2;
+    }
+  }
+
+  .contacts-item {
+    padding-right: 3px;
+  }
+
+  .footer-license {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    flex-direction: column;
+    max-width: 290px;
+  }
+
+  .license-list {
+    margin-bottom: 8px;
   }
 }
