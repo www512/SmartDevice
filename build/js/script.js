@@ -1,6 +1,6 @@
 'use strict';
 
-//Плавный скролл
+//Scroll
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
       animationTime = 400,
       framesCount = 30;
@@ -24,7 +24,7 @@ anchors.forEach(function(item) {
   });
 });
 
-//Модальное окно
+//Modal
 let call = document.querySelector('.site-list__button');
 let popup = document.querySelector('.modal');
 let close = document.querySelector('.modal__close');
@@ -61,7 +61,7 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
-//Маска в модальном окне на номер телефона
+//Mask in a modal window on a phone number
 let phone = document.getElementById('phone');
 let modalPhone = document.getElementById('modal_phone');
 
@@ -71,7 +71,7 @@ let maskOptions = {
 let maskForm = IMask(phone, maskOptions);
 let maskModal = IMask(modalPhone, maskOptions);
 
-//Футер
+//Footer
 let logo = document.getElementById('logo');
 let year = document.querySelector('.footer-license__year');
 let yearClone = year.cloneNode(true);
@@ -80,7 +80,7 @@ yearClone.classList.add('footer-year');
 year.classList.add('footer-year-off');
 logo.after(yearClone);
 
-//Аккардион для мобильной версии в футере
+//Accordion for the mobile version in the footer
 let section = document.getElementById('section-button');
 let contacts = document.getElementById('contacts-button');
 let sectionList = document.querySelector('.footer-list-section');
