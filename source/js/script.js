@@ -70,3 +70,13 @@ let maskOptions = {
 };
 let maskForm = IMask(phone, maskOptions);
 let maskModal = IMask(modalPhone, maskOptions);
+
+//Футер
+let logo = document.getElementById('logo');
+let year = document.querySelector('.footer-license__year');
+let yearClone = year.cloneNode(true);
+
+yearClone.classList.add('footer-year');
+year.classList.add('footer-year-off');
+logo.after(yearClone);
+// year.remove();
