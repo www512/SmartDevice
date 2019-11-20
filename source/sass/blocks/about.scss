@@ -266,14 +266,3 @@
     margin-top: 20px;
   }
 }
-
-@media (max-width: $mobile-width) {
-  .about {
-    background-image: url("../img/about-rectangle3.svg");
-    background-position: top 90px left calc(50% + 106px);
-  }
-
-  .about__wrapper {
-    width: 290px;
-  }
-}

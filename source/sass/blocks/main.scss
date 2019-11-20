@@ -1,10 +1,11 @@
 .main-wrapper {
   padding-top: 316px;
   padding-bottom: 275px;
-  background-image: url("../img/main-background.png"),
-                    url("../img/main-rectangles.png");
-  background-size: 100% 878px, auto;
-  background-position: center top;
+  background-image: url("../img/main-smart.png"),
+                    url("../img/main-rectangles.png"),
+                    url("../img/main-background.png");
+  background-size: auto, auto, 100% 878px;
+  background-position: left calc(50% + 431px) top 258px, center top, center top;
   background-repeat: no-repeat;
   background-color: #1b2d37;
 }
@@ -13,20 +14,6 @@
   max-width: 1411px;
   margin: 0 auto;
   padding: 0;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -58px;
-    left: 785px;
-    width: 705px;
-    height: 515px;
-    background-image: url("../img/main-smart.png");
-    background-size: 705px 515px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-  }
 }
 
 .main__title {
@@ -123,9 +110,11 @@
   .main-wrapper {
     padding-top: 188px;
     padding-bottom: 163px;
-    background-image: url("../img/main-background-lap.png"),
-                      url("../img/main-rectangles-lap.png");
-    background-size: 100% 686px, auto;
+    background-image: url("../img/main-smart-lap.png"),
+                      url("../img/main-rectangles-lap.png"),
+                      url("../img/main-background-lap.png");
+    background-size: auto, auto, 100% 686px;
+    background-position: left calc(50% + 358px) top 113px, center top, center top;
   }
 
   .main__scroll {
@@ -133,18 +122,8 @@
   }
 
   .main-wrapper__content {
-    margin: 0;
     padding-left: 93px;
     max-width: 720px;
-
-    &::after {
-      top: -75px;
-      left: 510px;
-      width: 465px;
-      height: 340px;
-      background-image: url("../img/main-smart-lap.png");
-      background-size: 465px 340px;
-    }
   }
 
   .main__title {
@@ -179,23 +158,17 @@
   .main-wrapper {
     padding-top: 287px;
     padding-bottom: 70px;
-    background-image: url("../img/main-background-mobile.png"),
-                      url("../img/main-rectangles-mobile.png");
-    background-size: 100% 647px, auto;
+    background-image: url("../img/main-smart-mobile.png"),
+                      url("../img/main-rectangles-mobile.png"),
+                      url("../img/main-background-mobile.png");
+    background-size: auto, auto, 100% 647px;
+    background-position: left calc(50% - 126px) top 92px, left calc(50% - 143px) top, center top;
   }
 
   .main-wrapper__content {
-    padding-left: 101px;
+    padding: 0;
     max-width: 287px;
-
-    &::after {
-      top: -195px;
-      left: 107px;
-      width: 301px;
-      height: 220px;
-      background-image: url("../img/main-smart-mobile.png");
-      background-size: 301px 220px;
-    }
+    outline: 1px solid red;
   }
 
   .main__title {
