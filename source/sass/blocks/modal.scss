@@ -84,6 +84,7 @@
   padding: 11px 17px;
   width: 100%;
   resize: none;
+  overflow: hidden;
 }
 
 .modal-button {
@@ -192,6 +193,18 @@
   &::after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+}
+
+.modal__close:hover::before,
+.modal__close:hover::after,
+.modal__close:focus::before,
+.modal__close:focus::after {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.modal__close:active::before,
+.modal__close:active::after {
+  background-color: $white;
 }
 
 .page-overlay__show {

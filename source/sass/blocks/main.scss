@@ -14,6 +14,7 @@
   max-width: 1411px;
   margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 
 .main__title {
@@ -162,13 +163,12 @@
                       url("../img/main-rectangles-mobile.png"),
                       url("../img/main-background-mobile.png");
     background-size: auto, auto, 100% 647px;
-    background-position: left calc(50% - 126px) top 92px, left calc(50% - 143px) top, center top;
+    background-position: left calc(50% + 16px) top 92px, left calc(50% - 1px) top, center top;
   }
 
   .main-wrapper__content {
-    padding: 0;
+    padding-left: 5px;
     max-width: 287px;
-    outline: 1px solid red;
   }
 
   .main__title {

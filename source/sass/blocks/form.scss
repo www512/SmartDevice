@@ -103,6 +103,7 @@
   width: 100%;
   margin-top: 40px;
   resize: none;
+  overflow: hidden;
 }
 
 .filter__input {
@@ -230,13 +231,75 @@
 
   .filter__input-checkbox {
     &:checked + .filter__checkbox::after {
-    left: -30px;
-    top: 9px;
-  }
+      left: -30px;
+      top: 9px;
+    }
 
-  & + .filter__checkbox::before {
-    left: -34px;
-    top: 3px;
+    & + .filter__checkbox::before {
+      left: -34px;
+      top: 3px;
+    }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .form-wrapper {
+    width: 290px;
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
+
+  .form__title {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+
+  .form__text {
+    margin-bottom: 26px;
+  }
+
+  .filter__type {
+    margin-bottom: 24px;
+  }
+
+  .filter__type-input {
+    display: block;
+  }
+
+  .filter__input {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .filter__textarea {
+    margin-top: 0;
+    height: 104px;
+  }
+
+  .form-button {
+    margin-bottom: 31px;
+    padding: 14px 13px;
+    width: 100%;
+  }
+
+  .form-submit {
+    display: block;
+  }
+
+  .filter__checkbox {
+    display: block;
+    margin-left: 34px;
+  }
+
+  .filter__input-checkbox {
+    &:checked + .filter__checkbox::after {
+      left: -30px;
+      top: 7px;
+    }
+
+    & + .filter__checkbox::before {
+      left: -35px;
+      top: 1px;
+    }
+  }
 }

@@ -60,3 +60,13 @@ window.addEventListener('keydown', function (evt) {
         bodyScroll.classList.remove('scroll-off');
     }
 });
+
+//Маска в модальном окне на номер телефона
+let phone = document.getElementById('phone');
+let modalPhone = document.getElementById('modal_phone');
+
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+let maskForm = IMask(phone, maskOptions);
+let maskModal = IMask(modalPhone, maskOptions);

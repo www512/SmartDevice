@@ -266,3 +266,92 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .about {
+    background-image: url("../img/about-rectangle3.svg");
+    background-position: top 652px left calc(50% + 156px);
+  }
+
+  .about__wrapper {
+    width: 290px;
+    padding-top: 37px;
+    padding-bottom: 66px;
+  }
+
+  .about__wrapper-company {
+    padding-top: 9px;
+    padding-left: 0;
+  }
+
+  .about__item {
+    margin-bottom: 20px;
+  }
+
+  .about__item:nth-last-of-type(-n+2) {
+    margin-bottom: 20px;
+  }
+
+  .about__link {
+    padding: 71px 14px 24px 22px;
+    width: 290px;
+    min-height: 232px;
+  }
+
+  .about__item-icon {
+    top: 24px;
+    left: 22px;
+  }
+
+  .about__item-title {
+    font-size: 20px;
+    line-height: 140.62%;
+    width: 246px;
+  }
+
+  .about__item-icon-1 {
+    width: 29px;
+    height: 35px;
+  }
+
+  .about__item-icon-2 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about__item-icon-3 {
+    width: 30px;
+    height: 26px;
+  }
+
+  .about__item-icon-4 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about__item-text {
+    width: auto;
+  }
+
+    .about__title {
+      font-size: 28px;
+      margin-bottom: 21px;
+
+      &::before {
+        content: none;
+      }
+  }
+
+  .about__text {
+    padding-left: 1px;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about__detail {
+    margin-top: 28px;
+  }
+}
