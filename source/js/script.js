@@ -135,3 +135,15 @@ contacts.addEventListener('click', function(evt) {
   evt.preventDefault();
   onContacts ();
 })
+
+//Form reset
+let form = document.querySelector('.filter');
+let formModal = document.querySelector('.modal__filter');
+
+window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        form.reset();
+        formModal.reset();
+    }
+});
