@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1411px;
+  max-width: 1411px;
   padding-top: 33px;
+  padding-bottom: 33px;
   position: absolute;
   left: 0;
   top: 0;
@@ -14,6 +15,7 @@
 .logo {
   display: flex;
   align-items: flex-end;
+  text-decoration: none;
 }
 
 .logo-title {
@@ -117,7 +119,7 @@
 
 @media (max-width: $laptop-width) {
   .header {
-    width: 720px;
+    max-width: 720px;
     padding-top: 18px;
   }
 

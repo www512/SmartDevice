@@ -13,7 +13,7 @@
 }
 
 .form-wrapper {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 91px;
   padding-bottom: 113px;
@@ -125,6 +125,7 @@
 
 .filter__checkbox {
   width: 230px;
+  padding-left: 30px;
   font-family: $font-ptmono;
   font-style: normal;
   font-weight: normal;
@@ -147,18 +148,19 @@
     position: absolute;
     width: 7.5px;
     height: 4.5px;
-    left: -26px;
+    left: 4px;
     top: 9px;
     background-image: url("../img/checkbox.svg");
     background-size: 9px 6px;
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: transparent;
   }
 
   & + .filter__checkbox::before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: 0;
     top: 3px;
     width: 15px;
     height: 15px;
@@ -174,7 +176,7 @@
   }
 
   .form-wrapper {
-    width: 590px;
+    max-width: 590px;
     padding-top: 80px;
     padding-bottom: 105px;
 
@@ -220,12 +222,12 @@
 
   .filter__input-checkbox {
     &:checked + .filter__checkbox::after {
-      left: -30px;
+      left: 0;
       top: 9px;
     }
 
     & + .filter__checkbox::before {
-      left: -34px;
+      left: -4px;
       top: 3px;
     }
   }
@@ -233,9 +235,11 @@
 
 @media (max-width: $mobile-width) {
   .form-wrapper {
-    width: 290px;
+    min-width: 290px;
     padding-top: 30px;
     padding-bottom: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .form__title {
@@ -277,17 +281,17 @@
 
   .filter__checkbox {
     display: block;
-    margin-left: 34px;
+    margin-left: 5px;
   }
 
   .filter__input-checkbox {
     &:checked + .filter__checkbox::after {
-      left: -30px;
+      left: 0px;
       top: 7px;
     }
 
     & + .filter__checkbox::before {
-      left: -35px;
+      left: -5px;
       top: 1px;
     }
   }

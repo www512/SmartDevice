@@ -86,31 +86,43 @@ let contacts = document.getElementById('contacts-button');
 let sectionList = document.querySelector('.footer-list-section');
 let contactsList = document.querySelector('.footer-list-contscts');
 
-sectionList.classList.add('footer-year-off');
+sectionList.classList.add('footer-list-off');
 section.classList.remove('footer-button-mobile-off');
 section.classList.add('footer-button-mobile');
 
 function onSection () {
   if (section.classList.contains('footer-button-mobile-off')) {
-    sectionList.classList.add('footer-year-off');
+    sectionList.classList.add('footer-list-off');
     section.classList.remove('footer-button-mobile-off');
     section.classList.add('footer-button-mobile');
+    contactsList.classList.remove('footer-list-off');
+    contacts.classList.add('footer-button-mobile-off');
+    contacts.classList.remove('footer-button-mobile');
   } else {
-    sectionList.classList.remove('footer-year-off');
+    sectionList.classList.remove('footer-list-off');
     section.classList.add('footer-button-mobile-off');
     section.classList.remove('footer-button-mobile');
+    contactsList.classList.add('footer-list-off');
+    contacts.classList.remove('footer-button-mobile-off');
+    contacts.classList.add('footer-button-mobile');
   }
 }
 
 function onContacts () {
   if (contacts.classList.contains('footer-button-mobile-off')) {
-    contactsList.classList.add('footer-year-off');
+    contactsList.classList.add('footer-list-off');
     contacts.classList.remove('footer-button-mobile-off');
     contacts.classList.add('footer-button-mobile');
+    sectionList.classList.remove('footer-list-off');
+    section.classList.add('footer-button-mobile-off');
+    section.classList.remove('footer-button-mobile');
   } else {
-    contactsList.classList.remove('footer-year-off');
+    contactsList.classList.remove('footer-list-off');
     contacts.classList.add('footer-button-mobile-off');
     contacts.classList.remove('footer-button-mobile');
+    sectionList.classList.add('footer-list-off');
+    section.classList.remove('footer-button-mobile-off');
+    section.classList.add('footer-button-mobile');
   }
 }
 

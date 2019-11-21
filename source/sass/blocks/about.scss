@@ -13,14 +13,15 @@
 }
 
 .about__wrapper {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 112px;
-  padding-bottom: 111px;
+  padding-bottom: 42px;
 }
 
 .about__wrapper-company {
   padding-top: 69px;
+  padding-bottom: 69px;
   padding-left: 182px;
 }
 
@@ -51,7 +52,7 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
   text-decoration: none;
-  width: 570px;
+  max-width: 570px;
   min-height: 299px;
 }
 
@@ -209,12 +210,13 @@
 
   .about__wrapper {
     padding-top: 54px;
-    padding-bottom: 83px;
-    width: 720px;
+    padding-bottom: 59px;
+    max-width: 720px;
   }
 
   .about__wrapper-company {
     padding-top: 24px;
+    padding-bottom: 24px;
     padding-left: 188px;
   }
 
@@ -233,22 +235,22 @@
     margin-bottom: 9px;
   }
 
-  .about__item-icon-1 {
+  .about__item-icon-clock {
     width: 29px;
     height: 35px;
   }
 
-  .about__item-icon-2 {
+  .about__item-icon-provider {
     width: 32px;
     height: 32px;
   }
 
-  .about__item-icon-3 {
+  .about__item-icon-detective {
     width: 30px;
     height: 26px;
   }
 
-  .about__item-icon-4 {
+  .about__item-icon-coast {
     width: 32px;
     height: 32px;
   }
@@ -292,14 +294,22 @@
   }
 
   .about__wrapper {
-    width: 290px;
+    min-width: 290px;
     padding-top: 37px;
-    padding-bottom: 66px;
+    padding-bottom: 57px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .about__wrapper-company {
     padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 0;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
   }
 
   .about__item {
@@ -312,7 +322,8 @@
 
   .about__link {
     padding: 71px 14px 24px 22px;
-    width: 290px;
+    max-width: 737px;
+    width: 100%;
     min-height: 232px;
   }
 
@@ -327,22 +338,22 @@
     width: 246px;
   }
 
-  .about__item-icon-1 {
+  .about__item-icon-clock {
     width: 29px;
     height: 35px;
   }
 
-  .about__item-icon-2 {
+  .about__item-icon-provider {
     width: 32px;
     height: 32px;
   }
 
-  .about__item-icon-3 {
+  .about__item-icon-detective {
     width: 30px;
     height: 26px;
   }
 
-  .about__item-icon-4 {
+  .about__item-icon-coast {
     width: 32px;
     height: 32px;
   }
@@ -371,5 +382,6 @@
 
   .about__detail {
     margin-top: 28px;
+    width: 100%;
   }
 }

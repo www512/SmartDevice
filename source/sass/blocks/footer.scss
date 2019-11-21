@@ -1,11 +1,12 @@
 .footer {
-  padding-top: 65px;
+  padding-top: 6px;
   background-color: #fafafa;
 }
 
 .footer-contact {
-    width: 1411px;
+    max-width: 1411px;
     margin: 0 auto;
+    padding-top: 59px;
     padding-bottom: 59px;
     display: flex;
     justify-content: flex-start;
@@ -15,7 +16,9 @@
 .footer-contact::before {
   content: "";
   position: absolute;
-  left: calc((100vw - 1394px) / -2);
+  /*left: calc((100vw - 1394px) / -2);*/
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   width: 100vw;
   height: 1px;
@@ -140,7 +143,7 @@
 }
 
 .footer-license {
-  width: 1411px;
+  max-width: 1411px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -203,17 +206,18 @@
 
 @media (max-width: $laptop-width) {
   .footer {
-    padding-top: 17px;
+    padding-top: 0;
   }
 
   .footer-contact {
     display: block;
-    width: 720px;
+    max-width: 720px;
     padding-bottom: 44px;
+    padding-top: 19px;
   }
 
   .footer-contact::before {
-    left: calc((100vw - 703px) / -2);
+    /*left: calc((100vw - 703px) / -2);*/
     bottom: 8px;
     width: 100vw;
   }
@@ -270,15 +274,15 @@
     width: 243px;
   }
 
-  .footer-list-section-item-1 {
+  .footer-list-section-item-accessories {
     order: 1;
   }
 
-  .footer-list-section-item-2 {
+  .footer-list-section-item-delivery {
     order: 1;
   }
 
-  .footer-list-section-item-3 {
+  .footer-footer-list-section-item-contacts {
     order: 1;
   }
 
@@ -310,10 +314,11 @@
 
   .footer-contact {
     width: 290px;
+    padding-top: 0;
     padding-bottom: 0;
 
     &::before {
-      left: calc((100vw - 273px) / -2);
+      /*left: calc((100vw - 273px) / -2);*/
       bottom: 8px;
     }
   }
@@ -391,11 +396,6 @@
     background-color: #1b2d37;
   }
 
-/*  .footer-button-mobile:active::before,
-  .footer-button-mobile:active::after {
-    background-color: #c4c4c4;
-  }*/
-
   .footer-button-mobile-off {
     position: absolute;
     display: block;
@@ -423,10 +423,6 @@
   .footer-button-mobile-off:focus::before {
     background-color: #1b2d37;
   }
-
-/*  .footer-button-mobile-off:active::before {
-    background-color: #c4c4c4;
-  }*/
 
   .contacts {
     width: 290px;
@@ -459,5 +455,9 @@
 
   .license-list {
     margin-bottom: 8px;
+  }
+
+  .footer-list-off {
+    display: none;
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .main-wrapper__content {
-  width: 1411px;
+  max-width: 1411px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -128,7 +128,7 @@
 
   .main-wrapper__content {
     padding-left: 93px;
-    width: 720px;
+    max-width: 720px;
   }
 
   .main__title {
