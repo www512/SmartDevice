@@ -1,5 +1,6 @@
 .footer {
   padding-top: 65px;
+  background-color: #fafafa;
 }
 
 .footer-contact {
@@ -390,10 +391,10 @@
     background-color: #1b2d37;
   }
 
-  .footer-button-mobile:active::before,
+/*  .footer-button-mobile:active::before,
   .footer-button-mobile:active::after {
     background-color: #c4c4c4;
-  }
+  }*/
 
   .footer-button-mobile-off {
     position: absolute;
@@ -423,9 +424,9 @@
     background-color: #1b2d37;
   }
 
-  .footer-button-mobile-off:active::before {
+/*  .footer-button-mobile-off:active::before {
     background-color: #c4c4c4;
-  }
+  }*/
 
   .contacts {
     width: 290px;
