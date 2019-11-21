@@ -283,6 +283,19 @@
     }
   }
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .about__title::before {
+    content: "";
+    top: 0;
+    left: -210px;
+    width: 244px;
+    height: 362px;
+    background-image: url("../img/about-2005-lap.png");
+    background-size: 244px 362px;
+    background-position: left top;
+   }
+}
+
   .about__text-laptop-dots {
     display: inline;
   }
