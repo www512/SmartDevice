@@ -52,14 +52,14 @@ overlay.addEventListener('click', function (evt) {
     bodyScroll.classList.remove('scroll-off');
 });
 
-window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-        evt.preventDefault();
-        popup.classList.remove('modal__show');
-        overlay.classList.remove('page-overlay__show');
-        bodyScroll.classList.remove('scroll-off');
-    }
-});
+// window.addEventListener('keydown', function (evt) {
+//     if (evt.keyCode === 27) {
+//         evt.preventDefault();
+//         popup.classList.remove('modal__show');
+//         overlay.classList.remove('page-overlay__show');
+//         bodyScroll.classList.remove('scroll-off');
+//     }
+// });
 
 //Mask in a modal window on a phone number
 let phone = document.getElementById('phone');

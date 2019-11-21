@@ -75,6 +75,16 @@
   color: $white;
 }
 
+.modal__filter-name:hover,
+.modal__filter-name:focus {
+  outline: none;
+  background-color: #52cbff;
+}
+
+.modal__filter-name:active {
+  background-color: #19baff;
+}
+
 .modal__input {
   padding: 14px 16px;
   width: 100%;

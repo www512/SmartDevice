@@ -11,7 +11,7 @@
 
 .services-title {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 22px;
   padding: 0;
   font-family: $font-roboto-condensed;
   font-style: normal;
@@ -37,10 +37,6 @@
 
 .services__item:nth-child(3n) {
   margin-right: 0;
-}
-
-.services__item:nth-child(-n+3) {
-  margin-top: 0;
 }
 
 .services__item-link {
@@ -109,6 +105,7 @@
 
 .services__item-title {
   position: absolute;
+  width: 173px;
   top: 50px;
   left: 45px;
   right: 45px;
@@ -122,6 +119,13 @@
   color: $white;
 }
 
+@media (max-width: 1169px) {
+  .services__list {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
 @media (max-width: $laptop-width) {
   .services-wrapper {
     padding-top: 49px;
@@ -133,6 +137,11 @@
     font-size: 32px;
     line-height: 140.62%;
     width: 613px;
+  }
+
+  .services__list {
+    margin: 0;
+    max-width: none;
   }
 
   .services__item {

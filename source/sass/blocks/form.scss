@@ -78,6 +78,16 @@
   border-radius: 0;
 }
 
+.filter__name:hover,
+.filter__name:focus {
+  outline: none;
+  background-color: #52cbff;
+}
+
+.filter__name:active {
+  background-color: #19baff;
+}
+
 .filter__name::placeholder {
   font-family: $font-ptmono;
   font-style: normal;
