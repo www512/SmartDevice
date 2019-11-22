@@ -137,13 +137,53 @@ contacts.addEventListener('click', function(evt) {
 })
 
 //Form reset
-let form = document.querySelector('.filter');
-let formModal = document.querySelector('.modal__filter');
+// let form = document.querySelector('.filter');
+// let formModal = document.querySelector('.modal__filter');
 
-window.addEventListener('keydown', function (evt) {
+// window.addEventListener('keydown', function (evt) {
+//     if (evt.keyCode === 27) {
+//         evt.preventDefault();
+//         form.reset();
+//         formModal.reset();
+//     }
+// });
+
+//Input reset
+let formName = document.getElementById('name');
+let formPhone = document.getElementById('phone');
+let formQuestion = document.getElementById('question');
+let popupName = document.getElementById('modal_name');
+let popupPhone = document.getElementById('modal_phone');
+let popupQuestion = document.getElementById('modal_question');
+
+function resetInput (inputForm) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-        evt.preventDefault();
-        form.reset();
-        formModal.reset();
+      inputForm.value = "";
     }
-});
+  })
+};
+
+formName.onfocus = function() {
+  resetInput (formName);
+};
+
+formPhone.onfocus = function() {
+  resetInput (formPhone);
+};
+
+formQuestion.onfocus = function() {
+  resetInput (formQuestion);
+};
+
+popupName.onfocus = function() {
+  resetInput (popupName);
+};
+
+popupPhone.onfocus = function() {
+  resetInput (popupPhone);
+};
+
+popupQuestion.onfocus = function() {
+  resetInput (popupQuestion);
+};
