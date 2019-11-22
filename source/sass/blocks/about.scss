@@ -10,6 +10,8 @@
   background-color: transparent;
   background-size: auto;
   background-repeat: no-repeat;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about__wrapper {
@@ -142,7 +144,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   .about__title::before {
+  .about__title::before {
     content: "";
     top: 5px;
     left: -212px;
@@ -155,7 +157,6 @@
     background-position: left top;
    }
 }
-
 
 .about__text {
   margin: 0;
@@ -209,12 +210,17 @@
   .about {
     background-image: url("../img/about-rectangle3.svg");
     background-position: top 90px left calc(50% + 262px);
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .about__wrapper {
     padding-top: 54px;
     padding-bottom: 59px;
-    max-width: 720px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    max-width: 1023px;
   }
 
   .about__wrapper-company {
@@ -313,6 +319,8 @@
   .about {
     background-image: url("../img/about-rectangle3.svg");
     background-position: top 652px left calc(50% + 156px);
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .about__wrapper {

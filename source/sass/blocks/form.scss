@@ -10,6 +10,9 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-color: $blue;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form-wrapper {

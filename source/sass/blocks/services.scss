@@ -1,5 +1,7 @@
 .services {
   background-color: #1b2d37;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .services-wrapper {
@@ -135,10 +137,14 @@
 }
 
 @media (max-width: $laptop-width) {
+  .services {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .services-wrapper {
     padding-top: 49px;
     padding-bottom: 78px;
-    max-width: 715px;
   }
 
   .services-title {
@@ -155,6 +161,7 @@
   .services__item {
     margin-right: 0;
     margin-top: 46px;
+    width: 100%;
   }
 
   .services__item:nth-child(3n) {
@@ -170,20 +177,29 @@
   }
 
   .services__item-link {
-    width: 715px;
+    width: 100%;
     min-height: 256px;
   }
 
   .services__item-link-production::before {
     background-image: url("../img/services-image1-lap.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 
   .services__item-link-print::before {
     background-image: url("../img/services-image2-lap.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 
   .services__item-link-accessories::before {
     background-image: url("../img/services-image3-lap.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 
   .services__item-title {
@@ -198,6 +214,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .services-wrapper {
     padding-top: 50px;
     padding-bottom: 64px;
@@ -232,26 +253,18 @@
 
   .services__item-link {
     max-width: 737px;
-    width: 100%;
-    min-height: 256px;
   }
 
   .services__item-link-production::before {
     background-image: url("../img/services-image1-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 
   .services__item-link-print::before {
     background-image: url("../img/services-image2-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 
   .services__item-link-accessories::before {
     background-image: url("../img/services-image3-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 
   .services__item-title {
