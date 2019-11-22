@@ -73,7 +73,7 @@ let maskModal = IMask(modalPhone, maskOptions);
 
 //Footer
 let logo = document.getElementById('logo');
-let year = document.querySelector('.footer-license__year');
+let year = document.querySelector('.license-list__year');
 let yearClone = year.cloneNode(true);
 
 yearClone.classList.add('footer-year');

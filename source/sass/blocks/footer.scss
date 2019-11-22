@@ -143,12 +143,15 @@
   margin-left: auto;
 }
 
-.footer-license {
+.license-list {
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
   max-width: 1412px;
   margin: 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   font-family: $font-ptmono;
   font-style: normal;
   font-weight: normal;
@@ -161,20 +164,16 @@
   opacity: 0.5;
 }
 
-.license-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+.license-list__developer {
+  margin-left: auto;
 }
 
-.footer-license__copyright {
-  margin-right: 74px;
+.license-list__copyright {
+  margin-right: 5%;
 }
 
-.footer-license__year {
-  margin-right: 142px;
+.license-list__year {
+  margin-right: 10%;
 }
 
 .footer-link {
@@ -234,7 +233,7 @@
     width: 100vw;
   }
 
-  .footer-license__copyright {
+  .license-list__copyright {
     display: none;
   }
 
@@ -269,7 +268,7 @@
     margin-right: 0;
   }
 
-  .footer-license__year {
+  .license-list__year {
     margin: 0;
     margin-top: 9px;
     padding: 0;
@@ -300,10 +299,6 @@
   .contacts {
     margin-left: 0;
     margin-right: 13px;
-  }
-
-  .footer-license {
-    max-width: 973px;
   }
 
   .footer-year {
@@ -339,7 +334,7 @@
     padding-bottom: 48px;
   }
 
-  .footer-license__year {
+  .license-list__year {
     margin: 28px 0 32px 0;
   }
 
@@ -425,17 +420,6 @@
     padding-top: 29px;
     padding-bottom: 35px;
     position: relative;
-
-/*    &::before {
-      content: "";
-      position: absolute;
-      left: calc((100vw - 273px) / -2);
-      top: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #626962;
-      opacity: 0.2;
-    }*/
   }
 
   .contacts::before {
@@ -454,15 +438,16 @@
     padding-right: 3px;
   }
 
-  .footer-license {
+  .license-list {
     padding-top: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 26px;
     flex-direction: column;
-    width: 290px;
+    min-width: 290px;
   }
 
-  .license-list {
-    margin-bottom: 8px;
+  .license-list__developer {
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .footer-list-off {
