@@ -186,6 +186,8 @@
 @media (max-width: $laptop-width) {
   .form {
     background-image: none;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .form-wrapper {

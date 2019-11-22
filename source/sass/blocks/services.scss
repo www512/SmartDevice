@@ -28,24 +28,26 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .services__item {
   margin-top: 30px;
-  margin-right: 30px;
+  width: 31.62526%;
 }
 
-.services__item:nth-child(3n) {
-  margin-right: 0;
+.services__item:nth-child(3n+5) {
+  margin-right: auto;
+  margin-left: 30px;
+  outline: 1px solid red;
 }
 
 .services__item-link {
   text-decoration: none;
   display: block;
   padding: 50px 45px;
-  width: 370px;
+  max-width: 370px;
   min-height: 620px;
   position: relative;
   box-sizing: border-box;
@@ -74,14 +76,23 @@
 
 .services__item-link-production::before {
   background-image: url("../img/services-image1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 620px;
+  background-color: transparent;
 }
 
 .services__item-link-print::before {
   background-image: url("../img/services-image2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 620px;
+  background-color: transparent;
 }
 
 .services__item-link-accessories::before {
   background-image: url("../img/services-image3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 620px;
+  background-color: transparent;
 }
 
 .services__item-arrow {
@@ -119,21 +130,6 @@
   font-size: 20px;
   line-height: 30px;
   color: $white;
-}
-
-@media (max-width: 1169px) {
-  .services__list {
-    margin: 0 auto;
-    max-width: 770px;
-  }
-
-  .services__item:nth-child(3n) {
-    margin-right: 30px;
-  }
-
-  .services__item:nth-child(even) {
-    margin-right: 0;
-  }
 }
 
 @media (max-width: $laptop-width) {
@@ -177,28 +173,23 @@
   }
 
   .services__item-link {
+    max-width: 100%;
     width: 100%;
     min-height: 256px;
   }
 
   .services__item-link-production::before {
     background-image: url("../img/services-image1-lap.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   .services__item-link-print::before {
     background-image: url("../img/services-image2-lap.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   .services__item-link-accessories::before {
     background-image: url("../img/services-image3-lap.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
