@@ -189,7 +189,6 @@
   }
 
   .form-wrapper {
-    max-width: 590px;
     padding-top: 80px;
     padding-bottom: 105px;
 
@@ -217,7 +216,7 @@
   }
 
   .filter__input {
-    width: 280px;
+    width: calc(50% - 17px);
   }
 
   .filter__textarea {

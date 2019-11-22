@@ -37,6 +37,7 @@
 }
 
 .about__item {
+  width: calc(50% - 15px);
   margin-bottom: 30px;
   display: flex;
 }
@@ -199,13 +200,6 @@
   }
 }
 
-@media (max-width: 1139px) {
-  .about__list {
-    margin: 0 auto;
-    max-width: 570px;
-  }
-}
-
 @media (max-width: $laptop-width) {
   .about {
     background-image: url("../img/about-rectangle3.svg");
@@ -217,8 +211,6 @@
   .about__wrapper {
     padding-top: 54px;
     padding-bottom: 59px;
-    padding-left: 25px;
-    padding-right: 25px;
     box-sizing: border-box;
     max-width: 1023px;
   }
@@ -236,7 +228,7 @@
 
   .about__link {
     padding: 66px 15px 19px 26px;
-    width: 345px;
+    width: 100%;
     min-height: 232px;
   }
 
@@ -267,10 +259,6 @@
   .about__item-icon-coast {
     width: 32px;
     height: 32px;
-  }
-
-  .about__item-text {
-    width: 292px;
   }
 
   .about__title {
@@ -343,6 +331,7 @@
   }
 
   .about__item {
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -386,10 +375,6 @@
   .about__item-icon-coast {
     width: 32px;
     height: 32px;
-  }
-
-  .about__item-text {
-    width: auto;
   }
 
     .about__title {
