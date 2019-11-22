@@ -248,12 +248,15 @@
 }
 
 @media (max-width: $mobile-width) {
+  .form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .form-wrapper {
     min-width: 290px;
     padding-top: 30px;
     padding-bottom: 42px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .form__title {
