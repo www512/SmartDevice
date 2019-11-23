@@ -141,7 +141,8 @@ contacts.addEventListener('click', function(evt) {
 
 //Input reset
 let formFilter = document.querySelector('.filter__type');
-let modalFilter = document.querySelector('.modal__filter');
+let modalName = document.getElementById('modal_name');
+let modalQuestion = document.getElementById('modal_question');
 
 formFilter.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
@@ -149,14 +150,14 @@ formFilter.addEventListener('keydown', function(evt) {
   }
 });
 
-modalFilter.addEventListener('keydown', function(evt) {
+window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    if (evt.target.value == "") {
+    if (evt.target == modalName || evt.target == modalPhone || evt.target == modalQuestion) {
+      evt.target.value = "";
+    } else {
       popup.classList.remove('modal__show');
       overlay.classList.remove('page-overlay__show');
       bodyScroll.classList.remove('scroll-off');
-    } else {
-      evt.target.value = "";
     }
   }
 });
