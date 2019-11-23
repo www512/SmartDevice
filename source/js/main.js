@@ -31,45 +31,52 @@ let close = document.querySelector('.modal__close');
 let overlay = document.querySelector('.page-overlay');
 let bodyScroll = document.querySelector('body');
 
-call.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.add('modal__show');
-    overlay.classList.add('page-overlay__show');
-    bodyScroll.classList.add('scroll-off');
-});
+if (call && popup && close && overlay && bodyScroll) {
+  call.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.add('modal__show');
+      overlay.classList.add('page-overlay__show');
+      bodyScroll.classList.add('scroll-off');
+  });
 
-close.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.remove('modal__show');
-    overlay.classList.remove('page-overlay__show');
-    bodyScroll.classList.remove('scroll-off');
-});
+  close.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.remove('modal__show');
+      overlay.classList.remove('page-overlay__show');
+      bodyScroll.classList.remove('scroll-off');
+  });
 
-overlay.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.remove('modal__show');
-    overlay.classList.remove('page-overlay__show');
-    bodyScroll.classList.remove('scroll-off');
-});
+  overlay.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.remove('modal__show');
+      overlay.classList.remove('page-overlay__show');
+      bodyScroll.classList.remove('scroll-off');
+  });
+}
 
 //Mask in a modal window on a phone number
 let phone = document.getElementById('phone');
 let modalPhone = document.getElementById('modal_phone');
 
-let maskOptions = {
-  mask: '+{7}(000)000-00-00'
-};
-let maskForm = IMask(phone, maskOptions);
-let maskModal = IMask(modalPhone, maskOptions);
+if (phone && modalPhone) {
+  let maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  let maskForm = IMask(phone, maskOptions);
+  let maskModal = IMask(modalPhone, maskOptions);
+}
 
 //Footer
 let logo = document.getElementById('logo');
 let year = document.querySelector('.license-list__year');
-let yearClone = year.cloneNode(true);
 
-yearClone.classList.add('footer-year');
-year.classList.add('footer-year-off');
-logo.after(yearClone);
+if (logo && year) {
+  let yearClone = year.cloneNode(true);
+
+  yearClone.classList.add('footer-year');
+  year.classList.add('footer-year-off');
+  logo.after(yearClone);
+}
 
 //Accordion for the mobile version in the footer
 let section = document.getElementById('section-button');
@@ -77,56 +84,58 @@ let contacts = document.getElementById('contacts-button');
 let sectionList = document.querySelector('.footer-list-section');
 let contactsList = document.querySelector('.footer-list-contscts');
 
-sectionList.classList.add('footer-list-off');
-section.classList.remove('footer-button-mobile-off');
-section.classList.add('footer-button-mobile');
+if (section && contacts && sectionList && contactsList) {
 
-function onSection () {
-  if (section.classList.contains('footer-button-mobile-off')) {
-    sectionList.classList.add('footer-list-off');
-    section.classList.remove('footer-button-mobile-off');
-    section.classList.add('footer-button-mobile');
-    contactsList.classList.remove('footer-list-off');
-    contacts.classList.add('footer-button-mobile-off');
-    contacts.classList.remove('footer-button-mobile');
-  } else {
-    sectionList.classList.remove('footer-list-off');
-    section.classList.add('footer-button-mobile-off');
-    section.classList.remove('footer-button-mobile');
-    contactsList.classList.add('footer-list-off');
-    contacts.classList.remove('footer-button-mobile-off');
-    contacts.classList.add('footer-button-mobile');
+  sectionList.classList.add('footer-list-off');
+  section.classList.remove('footer-button-mobile-off');
+  section.classList.add('footer-button-mobile');
+
+  function onSection () {
+    if (section.classList.contains('footer-button-mobile-off')) {
+      sectionList.classList.add('footer-list-off');
+      section.classList.remove('footer-button-mobile-off');
+      section.classList.add('footer-button-mobile');
+      contactsList.classList.remove('footer-list-off');
+      contacts.classList.add('footer-button-mobile-off');
+      contacts.classList.remove('footer-button-mobile');
+    } else {
+      sectionList.classList.remove('footer-list-off');
+      section.classList.add('footer-button-mobile-off');
+      section.classList.remove('footer-button-mobile');
+      contactsList.classList.add('footer-list-off');
+      contacts.classList.remove('footer-button-mobile-off');
+      contacts.classList.add('footer-button-mobile');
+    }
   }
-}
 
-function onContacts () {
-  if (contacts.classList.contains('footer-button-mobile-off')) {
-    contactsList.classList.add('footer-list-off');
-    contacts.classList.remove('footer-button-mobile-off');
-    contacts.classList.add('footer-button-mobile');
-    sectionList.classList.remove('footer-list-off');
-    section.classList.add('footer-button-mobile-off');
-    section.classList.remove('footer-button-mobile');
-  } else {
-    contactsList.classList.remove('footer-list-off');
-    contacts.classList.add('footer-button-mobile-off');
-    contacts.classList.remove('footer-button-mobile');
-    sectionList.classList.add('footer-list-off');
-    section.classList.remove('footer-button-mobile-off');
-    section.classList.add('footer-button-mobile');
+  function onContacts () {
+    if (contacts.classList.contains('footer-button-mobile-off')) {
+      contactsList.classList.add('footer-list-off');
+      contacts.classList.remove('footer-button-mobile-off');
+      contacts.classList.add('footer-button-mobile');
+      sectionList.classList.remove('footer-list-off');
+      section.classList.add('footer-button-mobile-off');
+      section.classList.remove('footer-button-mobile');
+    } else {
+      contactsList.classList.remove('footer-list-off');
+      contacts.classList.add('footer-button-mobile-off');
+      contacts.classList.remove('footer-button-mobile');
+      sectionList.classList.add('footer-list-off');
+      section.classList.remove('footer-button-mobile-off');
+      section.classList.add('footer-button-mobile');
+    }
   }
+
+  section.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    onSection ();
+  })
+
+  contacts.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    onContacts ();
+  })
 }
-
-section.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  onSection ();
-})
-
-contacts.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  onContacts ();
-})
-
 //Form reset
 // let form = document.querySelector('.filter');
 // let formModal = document.querySelector('.modal__filter');
@@ -144,20 +153,22 @@ let formFilter = document.querySelector('.filter__type');
 let modalName = document.getElementById('modal_name');
 let modalQuestion = document.getElementById('modal_question');
 
-formFilter.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27) {
-    evt.target.value = "";
-  }
-});
-
-window.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27) {
-    if (evt.target == modalName || evt.target == modalPhone || evt.target == modalQuestion) {
+if (formFilter && modalName && modalQuestion) {
+  formFilter.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27) {
       evt.target.value = "";
-    } else {
-      popup.classList.remove('modal__show');
-      overlay.classList.remove('page-overlay__show');
-      bodyScroll.classList.remove('scroll-off');
     }
-  }
-});
+  });
+
+  window.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27) {
+      if (evt.target == modalName || evt.target == modalPhone || evt.target == modalQuestion) {
+        evt.target.value = "";
+      } else {
+        popup.classList.remove('modal__show');
+        overlay.classList.remove('page-overlay__show');
+        bodyScroll.classList.remove('scroll-off');
+      }
+    }
+  });
+}
