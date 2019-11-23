@@ -52,15 +52,6 @@ overlay.addEventListener('click', function (evt) {
     bodyScroll.classList.remove('scroll-off');
 });
 
-// window.addEventListener('keydown', function (evt) {
-//     if (evt.keyCode === 27) {
-//         evt.preventDefault();
-//         popup.classList.remove('modal__show');
-//         overlay.classList.remove('page-overlay__show');
-//         bodyScroll.classList.remove('scroll-off');
-//     }
-// });
-
 //Mask in a modal window on a phone number
 let phone = document.getElementById('phone');
 let modalPhone = document.getElementById('modal_phone');
@@ -149,41 +140,23 @@ contacts.addEventListener('click', function(evt) {
 // });
 
 //Input reset
-let formName = document.getElementById('name');
-let formPhone = document.getElementById('phone');
-let formQuestion = document.getElementById('question');
-let popupName = document.getElementById('modal_name');
-let popupPhone = document.getElementById('modal_phone');
-let popupQuestion = document.getElementById('modal_question');
+let formFilter = document.querySelector('.filter__type');
+let modalFilter = document.querySelector('.modal__filter');
 
-function resetInput (inputForm) {
-  window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      inputForm.value = "";
+formFilter.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    evt.target.value = "";
+  }
+});
+
+modalFilter.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    if (evt.target.value == "") {
+      popup.classList.remove('modal__show');
+      overlay.classList.remove('page-overlay__show');
+      bodyScroll.classList.remove('scroll-off');
+    } else {
+      evt.target.value = "";
     }
-  })
-};
-
-formName.onfocus = function() {
-  resetInput (formName);
-};
-
-formPhone.onfocus = function() {
-  resetInput (formPhone);
-};
-
-formQuestion.onfocus = function() {
-  resetInput (formQuestion);
-};
-
-popupName.onfocus = function() {
-  resetInput (popupName);
-};
-
-popupPhone.onfocus = function() {
-  resetInput (popupPhone);
-};
-
-popupQuestion.onfocus = function() {
-  resetInput (popupQuestion);
-};
+  }
+});
