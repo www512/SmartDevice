@@ -62,7 +62,7 @@
   fill: $blue;
 }
 
-.about__item-title {
+.about__item h4 {
   font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: normal;
@@ -74,7 +74,7 @@
   padding: 0;
 }
 
-.about__item-text {
+.about__item p {
   font-family: $font-ptmono;
   font-style: normal;
   font-weight: normal;
@@ -97,13 +97,13 @@
   fill: $white;
 }
 
-.about__link:hover > .about__item-title,
-.about__link:focus > .about__item-title {
+.about__link:hover > .about__item h4,
+.about__link:focus > .about__item h4 {
   color: $white;
 }
 
-.about__link:hover > .about__item-text,
-.about__link:focus > .about__item-text {
+.about__link:hover > .about__item p,
+.about__link:focus > .about__item p {
   color: $white;
 }
 
@@ -112,7 +112,7 @@
   background-color: rgba(1, 178, 255, 0.7);
 }
 
-.about__title {
+.about__wrapper-company h3 {
   position: relative;
   margin-bottom: 21px;
   padding: 0;
@@ -124,7 +124,7 @@
   color: #666666;
 }
 
-.about__title::before {
+.about__wrapper-company h3::before {
   content: "2005";
   position: absolute;
   top: 54px;
@@ -145,7 +145,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .about__title::before {
+  .about__wrapper-company h3::before {
     content: "";
     top: 5px;
     left: -212px;
@@ -159,7 +159,7 @@
    }
 }
 
-.about__text {
+.about__wrapper-company p {
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
@@ -237,7 +237,7 @@
     left: 25px;
   }
 
-  .about__item-title {
+  .about__item h4 {
     margin-bottom: 9px;
   }
 
@@ -261,7 +261,7 @@
     height: 32px;
   }
 
-  .about__title {
+  .about__wrapper-company h3 {
     font-size: 32px;
     line-height: 140.62%;
     margin-top: 0;
@@ -278,7 +278,7 @@
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   .about__title::before {
+   .about__wrapper-company h3::before {
     content: "";
     top: 0;
     left: -210px;
@@ -349,7 +349,7 @@
     left: 22px;
   }
 
-  .about__item-title {
+  .about__item h4 {
     font-size: 20px;
     line-height: 140.62%;
     width: 246px;
@@ -375,7 +375,7 @@
     height: 32px;
   }
 
-    .about__title {
+    .about__wrapper-company h3 {
       font-size: 28px;
       margin-bottom: 21px;
 
@@ -384,7 +384,7 @@
       }
   }
 
-  .about__text {
+  .about__wrapper-company p {
     padding-left: 1px;
     margin-bottom: 40px;
 

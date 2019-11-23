@@ -116,7 +116,7 @@
   transform: rotate(-45deg);
 }
 
-.services__item-title {
+.services__item h4 {
   position: absolute;
   width: 173px;
   top: 50px;
@@ -193,13 +193,13 @@
     background-size: 100% auto;
   }
 
-  .services__item-title {
+  .services__item h4 {
     top: 39px;
     left: 42px;
     width: 160px;
   }
 
-  .services__item-link-accessories .services__item-title {
+  .services__item-link-accessories .services__item h4 {
     top: 49px;
   }
 }
@@ -256,13 +256,13 @@
     background-image: url("../img/services-image3-mobile.png");
   }
 
-  .services__item-title {
+  .services__item h4 {
     top: 20px;
     left: 34px;
     width: 173px;
   }
 
-  .services__item-link-accessories .services__item-title {
+  .services__item-link-accessories .services__item h4 {
     top: 30px;
     left: 35px;
   }

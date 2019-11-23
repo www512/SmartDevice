@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.main__title {
+.main-wrapper__content h2 {
   margin: 0;
   margin-left: -5px;
   margin-bottom: 26px;
@@ -35,7 +35,7 @@
   color: $white;
 }
 
-.main__description {
+.main-wrapper__content p {
   margin: 0;
   margin-left: 94px;
   margin-bottom: 44px;
@@ -134,14 +134,14 @@
     padding-right: 25px;
   }
 
-  .main__title {
+  .main-wrapper__content h2 {
     margin-bottom: 29px;
     width: 470px;
     font-size: 60px;
     line-height: 70px;
   }
 
-  .main__description {
+  .main-wrapper__content p {
     width: 356px;
     margin-left: 46px;
     margin-bottom: 55px;
@@ -180,14 +180,14 @@
     padding-right: 15px;
   }
 
-  .main__title {
+  .main-wrapper__content h2 {
     margin-bottom: 26px;
     width: 277px;
     font-size: 40px;
     line-height: 47px;
   }
 
-  .main__description {
+  .main-wrapper__content p {
     width: 245px;
     margin-left: 46px;
     margin-bottom: 43px;
