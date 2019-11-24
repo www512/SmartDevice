@@ -1,5 +1,7 @@
 'use strict';
 
+const esc = 27;
+
 //Scroll
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
       animationTime = 400,
@@ -25,7 +27,7 @@ anchors.forEach(function(item) {
 });
 
 //Modal
-let call = document.querySelector('.site-list__button');
+let call = document.querySelector('.header-nav__button');
 let popup = document.querySelector('.modal');
 let close = document.querySelector('.modal__close');
 let overlay = document.querySelector('.page-overlay');
@@ -136,17 +138,6 @@ if (section && contacts && sectionList && contactsList) {
     onContacts ();
   })
 }
-//Form reset
-// let form = document.querySelector('.filter');
-// let formModal = document.querySelector('.modal__filter');
-
-// window.addEventListener('keydown', function (evt) {
-//     if (evt.keyCode === 27) {
-//         evt.preventDefault();
-//         form.reset();
-//         formModal.reset();
-//     }
-// });
 
 //Input reset
 let formFilter = document.querySelector('.filter__type');
@@ -155,13 +146,13 @@ let modalQuestion = document.getElementById('modal_question');
 
 if (formFilter && modalName && modalQuestion) {
   formFilter.addEventListener('keydown', function(evt) {
-    if (evt.keyCode === 27) {
+    if (evt.keyCode === esc) {
       evt.target.value = "";
     }
   });
 
   window.addEventListener('keydown', function(evt) {
-    if (evt.keyCode === 27) {
+    if (evt.keyCode === esc) {
       if (evt.target == modalName || evt.target == modalPhone || evt.target == modalQuestion) {
         evt.target.value = "";
       } else {
