@@ -129,7 +129,7 @@
   position: absolute;
   top: 54px;
   left: -278px;
-  background-image: url("../img/about-background.png");
+  background-image: url("../img/about-background@1x.png");
   background-size: 305px 115px;
   background-repeat: no-repeat;
   background-color: #00b35d;
@@ -144,6 +144,12 @@
   background-clip: text;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about__wrapper-company h3::before {
+    background-image: url("../img/about-background@2x.png"),
+  }
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .about__wrapper-company h3::before {
     content: "";
@@ -151,12 +157,18 @@
     left: -212px;
     width: 220px;
     height: 317px;
-    background-image: url("../img/about-2005.png");
+    background-image: url("../img/about-2005@1x.png");
     background-size: 220px 317px;
     background-color: transparent;
     transform: rotate(0deg);
     background-position: left top;
    }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about__wrapper-company h3::before {
+      background-image: url("../img/about-2005@2x.png"),
+    }
+  }
 }
 
 .about__wrapper-company p {
@@ -271,9 +283,15 @@
       left: -298px;
       font-size: 178.324px;
       line-height: 251px;
-      background-image: url("../img/about-background-lap.png");
+      background-image: url("../img/about-background-lap@1x.png");
       background-size: 347px 131px;
       background-position: 7px 58px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about__wrapper-company h3::before {
+      background-image: url("../img/about-background-lap@2x.png"),
     }
   }
 
@@ -284,10 +302,16 @@
     left: -210px;
     width: 244px;
     height: 362px;
-    background-image: url("../img/about-2005-lap.png");
+    background-image: url("../img/about-2005-lap@1x.png");
     background-size: 244px 362px;
     background-position: left top;
    }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about__wrapper-company h3::before {
+      background-image: url("../img/about-2005-lap@2x.png"),
+    }
+  }
 }
 
   .about__text-laptop-dots {

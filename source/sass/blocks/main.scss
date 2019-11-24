@@ -1,13 +1,21 @@
 .main-wrapper {
   padding-top: 316px;
   padding-bottom: 275px;
-  background-image: url("../img/main-smart.png"),
-                    url("../img/main-rectangles.png"),
-                    url("../img/main-background.png");
-  background-size: auto, auto, 100% 878px;
+  background-image: url("../img/main-smart@1x.png"),
+                    url("../img/main-rectangles@1x.png"),
+                    url("../img/main-background@1x.png");
+  background-size: 705px auto, 1920px auto, 100% 878px;
   background-position: left calc(50% + 431px) top 258px, center top, center top;
   background-repeat: no-repeat;
   background-color: #1b2d37;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-wrapper {
+    background-image: url("../img/main-smart@2x.png"),
+                      url("../img/main-rectangles@2x.png"),
+                      url("../img/main-background@2x.png");
+  }
 }
 
 .main-wrapper__content {
@@ -117,11 +125,19 @@
   .main-wrapper {
     padding-top: 188px;
     padding-bottom: 163px;
-    background-image: url("../img/main-smart-lap.png"),
-                      url("../img/main-rectangles-lap.png"),
-                      url("../img/main-background-lap.png");
-    background-size: auto, auto, 100% 686px;
+    background-image: url("../img/main-smart-lap@1x.png"),
+                      url("../img/main-rectangles-lap@1x.png"),
+                      url("../img/main-background-lap@1x.png");
+    background-size: 465px auto, 770px auto, 100% 686px;
     background-position: left calc(50% + 358px) top 113px, center top, center top;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-wrapper {
+      background-image: url("../img/main-smart-lap@2x.png"),
+                        url("../img/main-rectangles-lap@2x.png"),
+                        url("../img/main-background-lap@2x.png");
+    }
   }
 
   .main__scroll {
@@ -165,11 +181,19 @@
   .main-wrapper {
     padding-top: 287px;
     padding-bottom: 70px;
-    background-image: url("../img/main-smart-mobile.png"),
-                      url("../img/main-rectangles-mobile.png"),
-                      url("../img/main-background-mobile.png");
-    background-size: auto, auto, 100% 647px;
+    background-image: url("../img/main-smart-mobile@1x.png"),
+                      url("../img/main-rectangles-mobile@1x.png"),
+                      url("../img/main-background-mobile@1x.png");
+    background-size: 301px auto, 320px auto, 100% 647px;
     background-position: left calc(50% + 16px) top 92px, left calc(50% - 1px) top, center top;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-wrapper {
+      background-image: url("../img/main-smart-mobile@2x.png"),
+                        url("../img/main-rectangles-mobile@2x.png"),
+                        url("../img/main-background-mobile@2x.png");
+    }
   }
 
   .main-wrapper__content {

@@ -1,18 +1,27 @@
 .form {
   background-image: url("../img/form-rectangle1.svg"),
                     url("../img/form-rectangle2.svg"),
-                    url("../img/form-airplane.png"),
-                    url("../img/main-rectangles.png");
+                    url("../img/form-airplane@1x.png"),
+                    url("../img/main-rectangles@1x.png");
   background-position: top 42px left calc(50% + 816px),
                        top 287px left calc(50% + 790px),
                        top 161px left calc(50% - 354px),
                        top -178px left calc(50% - 854px);
-  background-size: auto;
+  background-size: auto, auto, 511px auto, 1920px auto;
   background-repeat: no-repeat;
   background-color: $blue;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .form {
+  background-image: url("../img/form-rectangle1.svg"),
+                    url("../img/form-rectangle2.svg"),
+                    url("../img/form-airplane@2x.png"),
+                    url("../img/main-rectangles@2x.png");
+  }
 }
 
 .form-wrapper {

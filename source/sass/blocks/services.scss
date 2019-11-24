@@ -75,24 +75,38 @@
 }
 
 .services__item-link-production::before {
-  background-image: url("../img/services-image1.png");
+  background-image: url("../img/services-production@1x.png");
   background-repeat: no-repeat;
   background-size: 100% 620px;
   background-color: transparent;
 }
 
 .services__item-link-print::before {
-  background-image: url("../img/services-image2.png");
+  background-image: url("../img/services-print@1x.png");
   background-repeat: no-repeat;
   background-size: 100% 620px;
   background-color: transparent;
 }
 
 .services__item-link-accessories::before {
-  background-image: url("../img/services-image3.png");
+  background-image: url("../img/services-accessories@1x.png");
   background-repeat: no-repeat;
   background-size: 100% 620px;
   background-color: transparent;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .services__item-link-production::before {
+    background-image: url("../img/services-production@2x.png");
+  }
+
+  .services__item-link-print::before {
+    background-image: url("../img/services-print@2x.png");
+  }
+
+  .services__item-link-accessories::before {
+    background-image: url("../img/services-accessories@2x.png");
+  }
 }
 
 .services__item-arrow {
@@ -179,18 +193,32 @@
   }
 
   .services__item-link-production::before {
-    background-image: url("../img/services-image1-lap.png");
+    background-image: url("../img/services-production-lap@1x.png");
     background-size: 100% auto;
   }
 
   .services__item-link-print::before {
-    background-image: url("../img/services-image2-lap.png");
+    background-image: url("../img/services-print-lap@1x.png");
     background-size: 100% auto;
   }
 
   .services__item-link-accessories::before {
-    background-image: url("../img/services-image3-lap.png");
+    background-image: url("../img/services-accessories-lap@1x.png");
     background-size: 100% auto;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .services__item-link-production::before {
+      background-image: url("../img/services-production-lap@2x.png");
+    }
+
+    .services__item-link-print::before {
+      background-image: url("../img/services-print-lap@2x.png");
+    }
+
+    .services__item-link-accessories::before {
+      background-image: url("../img/services-accessories-lap@2x.png");
+    }
   }
 
   .services__item h4 {
@@ -245,15 +273,29 @@
   }
 
   .services__item-link-production::before {
-    background-image: url("../img/services-image1-mobile.png");
+    background-image: url("../img/services-production-mobile@1x.png");
   }
 
   .services__item-link-print::before {
-    background-image: url("../img/services-image2-mobile.png");
+    background-image: url("../img/services-print-mobile@1x.png");
   }
 
   .services__item-link-accessories::before {
-    background-image: url("../img/services-image3-mobile.png");
+    background-image: url("../img/services-accessories-mobile@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .services__item-link-production::before {
+      background-image: url("../img/services-production-mobile@2x.png");
+    }
+
+    .services__item-link-print::before {
+      background-image: url("../img/services-print-mobile@2x.png");
+    }
+
+    .services__item-link-accessories::before {
+      background-image: url("../img/services-accessories-mobile@2x.png");
+    }
   }
 
   .services__item h4 {
