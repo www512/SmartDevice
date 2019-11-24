@@ -97,13 +97,13 @@
   fill: $white;
 }
 
-.about__link:hover > .about__item h4,
-.about__link:focus > .about__item h4 {
+.about__item:hover > .about__link h4,
+.about__item:focus > .about__link h4 {
   color: $white;
 }
 
-.about__link:hover > .about__item p,
-.about__link:focus > .about__item p {
+.about__item:hover > .about__link p,
+.about__item:focus > .about__link p {
   color: $white;
 }
 
