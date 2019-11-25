@@ -184,8 +184,8 @@
     background-image: url("../img/main-smart-mobile@1x.png"),
                       url("../img/main-rectangles-mobile@1x.png"),
                       url("../img/main-background-mobile@1x.png");
-    background-size: 301px auto, 320px auto, 100% 647px;
-    background-position: left calc(50% + 16px) top 92px, left calc(50% - 1px) top, center top;
+    background-size: 301px auto, 468px auto, 100% 647px;
+    background-position: left calc(50% + 16px) top 92px, left calc(50% + 238px) top 68px, center top;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
